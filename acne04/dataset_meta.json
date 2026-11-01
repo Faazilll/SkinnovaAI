@@ -1,0 +1,31 @@
+{
+  "source": "C:\\Users\\moinu\\Downloads\\1234\\skinova\\data\\acne04\\raw\\jincyjis_acne04",
+  "acquisition": {
+    "target_images": 1457,
+    "kaggle_configured": true,
+    "attempts": [
+      {
+        "source": "kaggle",
+        "slug": "jincyjis/acne04",
+        "ok": true
+      }
+    ],
+    "source_type": "kaggle",
+    "is_full_acne04": true,
+    "source_path": "C:\\Users\\moinu\\Downloads\\1234\\skinova\\data\\acne04\\raw\\jincyjis_acne04"
+  },
+  "organize_method": "dedupe_by_hash",
+  "target_images": 1457,
+  "is_full_acne04": true,
+  "counts": {
+    "0": 487,
+    "1": 617,
+    "2": 179,
+    "3": 136,
+    "unlabeled": 0,
+    "duplicate_skipped": 38,
+    "label_conflict": 9,
+    "unique_labeled": 1419,
+    "unique_total_seen": 1419
+  }
+}

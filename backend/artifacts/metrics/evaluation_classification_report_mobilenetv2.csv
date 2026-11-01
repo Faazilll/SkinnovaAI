@@ -1,0 +1,7 @@
+class_id,class_name,precision,recall,f1_score,support
+0,Grade 0 (Clear / Mild),0.7143,0.7534,0.7333,73
+1,Grade 1 (Moderate),0.7059,0.6452,0.6742,93
+2,Grade 2 (Severe),0.56,0.5185,0.5385,27
+3,Grade 3 (Very Severe),0.6923,0.9,0.7826,20
+macro_avg,Macro Average,0.6681,0.7043,0.6821,213
+weighted_avg,Weighted Average,0.689,0.6901,0.6874,213

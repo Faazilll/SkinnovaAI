@@ -1,0 +1,24 @@
+{
+  "targets": {
+    "hormonal_score": {
+      "mae": 8.884,
+      "r2": 0.5919
+    },
+    "lifestyle_score": {
+      "mae": 9.418,
+      "r2": 0.7338
+    },
+    "environmental_score": {
+      "mae": 10.35,
+      "r2": 0.3774
+    },
+    "combined_score": {
+      "mae": 6.727,
+      "r2": 0.5266
+    }
+  },
+  "n_train": 2400,
+  "n_test": 600,
+  "macro_mae": 8.845,
+  "labeling_note": "Trained on synthetic labels from clinically-informed rule engine + noise. Metrics reflect fidelity to the rule engine, NOT clinical predictive accuracy."
+}

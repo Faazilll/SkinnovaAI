@@ -1,0 +1,72 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+.gpuenv/
+faceenv/
+*/.venv/
+*/venv/
+*/env/
+*/.gpuenv/
+*/faceenv/
+
+# Python cache & compiled files
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.so
+*.dll
+
+# Node dependencies and build artifacts
+node_modules/
+*/node_modules/
+frontend/dist/
+dist/
+build/
+.npm/
+
+# Dataset files & large archives
+data/
+acne04/*
+!acne04/dataset_meta.json
+!acne04/reports/
+*.tar
+*.tar.*
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.csv
+!backend/artifacts/metrics/*.csv
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+backend/artifacts/data/*.db
+
+# Keep trained model artifacts
+!backend/artifacts/
+!backend/artifacts/**
+backend/artifacts/data/*.db

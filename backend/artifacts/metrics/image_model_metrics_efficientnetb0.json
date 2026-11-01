@@ -1,0 +1,139 @@
+{
+  "dataset": "ACNE04 full (official Classification.tar or Kaggle)",
+  "is_full_acne04": true,
+  "organize_counts": {
+    "0": 487,
+    "1": 617,
+    "2": 179,
+    "3": 136,
+    "unlabeled": 0,
+    "duplicate_skipped": 38,
+    "label_conflict": 9,
+    "unique_labeled": 1419,
+    "unique_total_seen": 1419
+  },
+  "n_total": 1419,
+  "n_train_raw": 993,
+  "n_val": 213,
+  "n_test": 213,
+  "class_counts_all": {
+    "0": 487,
+    "1": 617,
+    "2": 179,
+    "3": 136
+  },
+  "class_weights": {
+    "0": 0.7280058651026393,
+    "1": 0.5746527777777778,
+    "2": 1.986,
+    "3": 2.613157894736842
+  },
+  "oversampling": false,
+  "training_device": "GPU (TensorFlow on WSL2)",
+  "batch_size": 8,
+  "epochs_head_requested": 20,
+  "epochs_head_run": 11,
+  "epochs_ft_requested": 12,
+  "epochs_ft_run": 7,
+  "test_accuracy": 0.6009389671361502,
+  "test_macro_f1": 0.6205407233019435,
+  "confusion_matrix": [
+    [
+      53,
+      18,
+      2,
+      0
+    ],
+    [
+      29,
+      42,
+      21,
+      1
+    ],
+    [
+      0,
+      7,
+      16,
+      4
+    ],
+    [
+      0,
+      0,
+      3,
+      17
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.6463414634146342,
+      "recall": 0.726027397260274,
+      "f1-score": 0.6838709677419355,
+      "support": 73.0
+    },
+    "1": {
+      "precision": 0.6268656716417911,
+      "recall": 0.45161290322580644,
+      "f1-score": 0.525,
+      "support": 93.0
+    },
+    "2": {
+      "precision": 0.38095238095238093,
+      "recall": 0.5925925925925926,
+      "f1-score": 0.463768115942029,
+      "support": 27.0
+    },
+    "3": {
+      "precision": 0.7727272727272727,
+      "recall": 0.85,
+      "f1-score": 0.8095238095238095,
+      "support": 20.0
+    },
+    "accuracy": 0.6009389671361502,
+    "macro avg": {
+      "precision": 0.6067216971840197,
+      "recall": 0.6550582232696682,
+      "f1-score": 0.6205407233019435,
+      "support": 213.0
+    },
+    "weighted avg": {
+      "precision": 0.6160642912310544,
+      "recall": 0.6009389671361502,
+      "f1-score": 0.5984027979627806,
+      "support": 213.0
+    }
+  },
+  "severity_to_risk_lookup": {
+    "0": 18.0,
+    "1": 42.0,
+    "2": 68.0,
+    "3": 88.0
+  },
+  "history_head_val_acc": [
+    0.4647887349128723,
+    0.577464759349823,
+    0.5399060845375061,
+    0.5446009635925293,
+    0.6150234937667847,
+    0.6478873491287231,
+    0.49295774102211,
+    0.5680751204490662,
+    0.6291079521179199,
+    0.5821596384048462,
+    0.6103286147117615
+  ],
+  "history_ft_val_acc": [
+    0.6244131326675415,
+    0.6619718074798584,
+    0.65727698802948,
+    0.6009389758110046,
+    0.6197183132171631,
+    0.6150234937667847,
+    0.6150234937667847
+  ],
+  "training_wall_seconds": 764.8628611564636,
+  "model_path": "/mnt/c/Users/moinu/Downloads/1234/skinova/backend/artifacts/image/efficientnetb0_acne04.keras",
+  "preprocessing": "RGB conversion, square center crop, 224x224 resize; no YuNet/Haar face crop during training",
+  "balancing": "class weights only; no oversampling",
+  "previous_mobilenet_accuracy": 0.6901408450704225,
+  "previous_mobilenet_macro_f1": 0.682140217704458
+}

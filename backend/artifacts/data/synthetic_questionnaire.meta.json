@@ -1,0 +1,6 @@
+{
+  "n_rows": 3000,
+  "seed": 42,
+  "labeling": "rule_engine_plus_gaussian_noise",
+  "note": "NOT real patient outcomes \u2014 transparent synthetic ground truth"
+}

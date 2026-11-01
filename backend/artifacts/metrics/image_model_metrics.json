@@ -1,0 +1,157 @@
+{
+  "dataset": "ACNE04 full (official Classification.tar or Kaggle)",
+  "is_full_acne04": true,
+  "acquisition": {
+    "target_images": 1457,
+    "kaggle_configured": true,
+    "attempts": [
+      {
+        "source": "kaggle",
+        "slug": "jincyjis/acne04",
+        "ok": true
+      }
+    ],
+    "source_type": "kaggle",
+    "is_full_acne04": true,
+    "source_path": "C:\\Users\\moinu\\Downloads\\1234\\skinova\\data\\acne04\\raw\\jincyjis_acne04"
+  },
+  "organize_counts": {
+    "0": 487,
+    "1": 617,
+    "2": 179,
+    "3": 136,
+    "unlabeled": 0,
+    "duplicate_skipped": 38,
+    "label_conflict": 9,
+    "unique_labeled": 1419,
+    "unique_total_seen": 1419
+  },
+  "n_total": 1419,
+  "n_train_raw": 993,
+  "n_train_oversampled": 1728,
+  "n_val": 213,
+  "n_test": 213,
+  "class_counts_all": {
+    "0": 487,
+    "1": 617,
+    "2": 179,
+    "3": 136
+  },
+  "class_weights": {
+    "0": 0.7280058651026393,
+    "1": 0.5746527777777778,
+    "2": 1.986,
+    "3": 2.613157894736842
+  },
+  "oversampling": true,
+  "epochs_head_requested": 20,
+  "epochs_ft_requested": 12,
+  "epochs_head_run": 19,
+  "epochs_ft_run": 6,
+  "training_wall_seconds": 1304.0,
+  "training_device": "GPU (TensorFlow on WSL2)",
+  "test_accuracy": 0.5634,
+  "test_macro_f1": 0.5746,
+  "confusion_matrix": [
+    [
+      65,
+      7,
+      1,
+      0
+    ],
+    [
+      56,
+      25,
+      9,
+      3
+    ],
+    [
+      2,
+      8,
+      12,
+      5
+    ],
+    [
+      1,
+      0,
+      1,
+      18
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.5241935483870968,
+      "recall": 0.8904109589041096,
+      "f1-score": 0.6598984771573604,
+      "support": 73.0
+    },
+    "1": {
+      "precision": 0.625,
+      "recall": 0.26881720430107525,
+      "f1-score": 0.37593984962406013,
+      "support": 93.0
+    },
+    "2": {
+      "precision": 0.5217391304347826,
+      "recall": 0.4444444444444444,
+      "f1-score": 0.48,
+      "support": 27.0
+    },
+    "3": {
+      "precision": 0.6923076923076923,
+      "recall": 0.9,
+      "f1-score": 0.782608695652174,
+      "support": 20.0
+    },
+    "accuracy": 0.5633802816901409,
+    "macro avg": {
+      "precision": 0.5908100927823929,
+      "recall": 0.6259181519124073,
+      "f1-score": 0.5746117556083986,
+      "support": 213.0
+    },
+    "weighted avg": {
+      "precision": 0.58368187511808,
+      "recall": 0.5633802816901409,
+      "f1-score": 0.5246345951200393,
+      "support": 213.0
+    }
+  },
+  "severity_to_risk_lookup": {
+    "0": 18.0,
+    "1": 42.0,
+    "2": 68.0,
+    "3": 88.0
+  },
+  "history_head_val_acc": [
+    0.4600938856601715,
+    0.43192487955093384,
+    0.48356807231903076,
+    0.49295774102211,
+    0.5258215665817261,
+    0.47417840361595154,
+    0.49295774102211,
+    0.5633803009986877,
+    0.49295774102211,
+    0.5211267471313477,
+    0.5258215665817261,
+    0.5680751204490662,
+    0.5117371082305908,
+    0.6009389758110046,
+    0.5399060845375061,
+    0.5399060845375061,
+    0.5352112650871277,
+    0.5539906024932861,
+    0.5680751204490662
+  ],
+  "history_ft_val_acc": [
+    0.5821596384048462,
+    0.5586854219436646,
+    0.5117371082305908,
+    0.5117371082305908,
+    0.5023474097251892,
+    0.5023474097251892
+  ],
+  "model_path": "/mnt/c/Users/moinu/Downloads/1234/skinova/backend/artifacts/image/mobilenetv2_acne04.keras",
+  "literature_note": "Published ACNE04 papers report ~76-90% accuracy on full dataset with GPU. Report this run's numbers honestly if below that range."
+}
