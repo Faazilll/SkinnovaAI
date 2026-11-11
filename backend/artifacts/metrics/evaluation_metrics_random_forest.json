@@ -1,0 +1,98 @@
+{
+  "evaluation_timestamp": "2026-11-11T11:51:35.922092",
+  "model_file": "C:\\Users\\moinu\\OneDrive\\Documents\\skinnovad\\skinnovA\\backend\\artifacts\\data\\data_model_rf.pkl",
+  "dataset_file": "C:\\Users\\moinu\\OneDrive\\Documents\\skinnovad\\skinnovA\\backend\\artifacts\\data\\synthetic_questionnaire.csv",
+  "n_train": 2400,
+  "n_test": 600,
+  "continuous_regression_metrics": {
+    "hormonal_score": {
+      "mae": 8.884,
+      "r2": 0.5919
+    },
+    "lifestyle_score": {
+      "mae": 9.418,
+      "r2": 0.7338
+    },
+    "environmental_score": {
+      "mae": 10.35,
+      "r2": 0.3774
+    },
+    "combined_score": {
+      "mae": 6.727,
+      "r2": 0.5266
+    }
+  },
+  "discretization_bins": [
+    0,
+    35,
+    50,
+    65,
+    101
+  ],
+  "overall_classification_metrics": {
+    "accuracy": 0.5733,
+    "accuracy_percent": 57.33,
+    "macro_precision": 0.5908,
+    "macro_recall": 0.4115,
+    "macro_f1": 0.4198,
+    "weighted_precision": 0.5831,
+    "weighted_recall": 0.5733,
+    "weighted_f1": 0.5355
+  },
+  "per_class_metrics": {
+    "Grade 0": {
+      "name": "Grade 0: Mild Risk (<35)",
+      "support": 53,
+      "precision": 0.5,
+      "recall": 0.0566,
+      "f1_score": 0.1017
+    },
+    "Grade 1": {
+      "name": "Grade 1: Moderate Risk (35-50)",
+      "support": 194,
+      "precision": 0.5279,
+      "recall": 0.5361,
+      "f1_score": 0.532
+    },
+    "Grade 2": {
+      "name": "Grade 2: Severe Risk (50-65)",
+      "support": 266,
+      "precision": 0.5854,
+      "recall": 0.812,
+      "f1_score": 0.6803
+    },
+    "Grade 3": {
+      "name": "Grade 3: Very Severe Risk (>=65)",
+      "support": 87,
+      "precision": 0.75,
+      "recall": 0.2414,
+      "f1_score": 0.3652
+    }
+  },
+  "confusion_matrix": [
+    [
+      3,
+      45,
+      5,
+      0
+    ],
+    [
+      3,
+      104,
+      85,
+      2
+    ],
+    [
+      0,
+      45,
+      216,
+      5
+    ],
+    [
+      0,
+      3,
+      63,
+      21
+    ]
+  ]
+}
